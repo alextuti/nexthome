@@ -2,195 +2,309 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="main.css" rel="stylesheet" />
     <title>nexthome</title>
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo"></div>
-      <button class="menu-toggle"></button>
+      <img class="logo" src="./assets/nexthome-logo.svg" alt="logo" />
+      <ul class="navbar__list">
+        <li class="navbar__list__item">
+          <a href="#" class="navbar__list__item__link" id="hot-it-works-link"
+            >How it works</a
+          >
+          <section id="how-it-works-dropdown" class="dropdown hide">
+            <ul class="menu__list">
+              <li class="dropdown__item">
+                <img
+                  src="./assets/tenant-face.svg"
+                  alt="Tenant"
+                  class="menu__list__item__icon"
+                />
+                <a href="#" class="menu__list__item__link">Tenants</a>
+              </li>
+              <li class="dropdown__item">
+                <img
+                  src="./assets/key-skeleton.svg"
+                  alt="Tenant"
+                  class="menu__list__item__icon"
+                />
+                <a href="#" class="menu__list__item__link">Landlords</a>
+              </li>
+              <li class="dropdown__item">
+                <img
+                  src="./assets/agencies-icon.svg"
+                  alt="Tenant"
+                  class="menu__list__item__icon"
+                />
+                <a href="#" class="menu__list__item__link">Agencies</a>
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li class="navbar__list__item">
+          <a href="#" class="navbar__list__item__link">About</a>
+        </li>
+        <li class="navbar__list__item">
+          <a href="#" class="navbar__list__item__link">Careers</a>
+        </li>
+        <li class="navbar__list__item">
+          <a href="#" class="navbar__list__item__link">Blog</a>
+        </li>
+        <li class="navbar__list__item">
+          <a href="#" class="navbar__list__item__link">Contact</a>
+        </li>
+      </ul>
+      <button class="menu__toggle"></button>
     </nav>
     <div class="menu hide">
       <section class="how-it-works">
         <h5>HOW IT WORKS</h5>
-        <ul class="menu-list">
+        <ul class="menu__list">
           <li>
             <img
               src="./assets/tenant-face.svg"
               alt="Tenant"
-              class="menu-list-item-icon"
+              class="menu__list__item__icon"
             />
-            <a href="#" class="menu-list-item-link">Tenants</a>
+            <a href="#" class="menu__list__item__link">Tenants</a>
           </li>
           <li>
             <img
               src="./assets/key-skeleton.svg"
               alt="Tenant"
-              class="menu-list-item-icon"
+              class="menu__list__item__icon"
             />
-            <a href="#" class="menu-list-item-link">Landlords</a>
+            <a href="#" class="menu__list__item__link">Landlords</a>
           </li>
           <li>
             <img
               src="./assets/agencies-icon.svg"
               alt="Tenant"
-              class="menu-list-item-icon"
+              class="menu__list__item__icon"
             />
-            <a href="#" class="menu-list-item-link">Agencies</a>
+            <a href="#" class="menu__list__item__link">Agencies</a>
           </li>
         </ul>
       </section>
       <section class="company">
         <h5>COMPANY</h5>
-        <ul class="menu-list">
-          <li><a href="#" class="menu-list-item-link">About</a></li>
-          <li><a href="#" class="menu-list-item-link">Careers</a></li>
-          <li><a href="#" class="menu-list-item-link">Blog</a></li>
-          <li><a href="#" class="menu-list-item-link">Contact</a></li>
+        <ul class="menu__list">
+          <li><a href="#" class="menu__list__item__link">About</a></li>
+          <li><a href="#" class="menu__list__item__link">Careers</a></li>
+          <li><a href="#" class="menu__list__item__link">Blog</a></li>
+          <li><a href="#" class="menu__list__item__link">Contact</a></li>
         </ul>
       </section>
     </div>
-    <main class="main">
+    <header class="header">
       <h1>Fast and secure deposit-free renting</h1>
       <img
         src="./assets/main-illustration-nexthome-01.svg"
         alt="Next home illustration"
-        class="main-illustration"
+        class="header__illustration"
       />
-      <p class="main-description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ex sit
-        minus ipsa doloremque iure quibusdam atque quidem aliquam quae,
-        laboriosam rem corrupti libero tempore vero ad, nisi consequatur
-        exercitationem!
-      </p>
-      <section class="card">
+    </header>
+    <main class="main">
+      <article class="card">
         <img
           src="./assets/tenant-face.svg"
           alt="Tenant Icon - a face"
-          class="card-icon"
+          class="card__icon"
         />
         <h2>Tenants</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
           aliquam commodi alias ad sit deserunt?
         </p>
-        <button class="card-action-button">Rent now</button>
-      </section>
-      <section class="card">
+        <button class="card__button">Rent now</button>
+      </article>
+      <article class="card">
         <img
           src="./assets/key-skeleton.svg"
           alt="Landlord icon - a key"
-          class="card-icon"
+          class="card__icon"
         />
         <h2>Landlords</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nemo
           explicabo suscipit esse, tempore dolorem?
         </p>
-        <button class="card-action-button">Let your property</button>
-      </section>
-      <section class="card">
+        <button class="card__button">Let your property</button>
+      </article>
+      <article class="card">
         <img
           src="./assets/agencies-icon.svg"
           alt="Agencies icon - a house with money sign on it"
-          class="card-icon"
+          class="card__icon"
         />
         <h2>Agencies</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
           architecto animi sit vitae aspernatur consequatur.
         </p>
-        <button class="card-action-button">Learn more</button>
+        <button class="card__button">Learn more</button>
+      </article>
+      <section class="partners">
+        <img
+          src="./assets/partners/atlist.png"
+          alt="Partner logo"
+          class="partners__logo"
+        />
+        <img
+          src="./assets/partners/chamber-furniture.png"
+          alt="Partner logo"
+          class="partners__logo"
+        />
+        <img
+          src="./assets/partners/hiscox.png"
+          alt="Partner logo"
+          class="partners__logo"
+        />
+        <img
+          src="./assets/partners/wandering_tom.png"
+          alt="Partner logo"
+          class="partners__logo"
+        />
       </section>
-      <section class="partners"></section>
-      <section class="card feature">
+      <article class="card feature">
         <img
           src="./assets/save-money-feature-01.svg"
           alt="Save money icon - Three men putting money inside a wallet"
-          class="card-icon"
+          class="card__icon"
         />
         <h2>Save money when moving</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ullam
           ipsa commodi laboriosam facere aspernatur!
         </p>
-      </section>
-      <section class="card feature">
+      </article>
+      <article class="card feature">
         <img
           src="./assets/fair-for-everyone-feature-01.svg"
           alt="Fair for everyone icon - Man with a shield in the background"
-          class="card-icon"
+          class="card__icon"
         />
         <h2>Fair for everyone</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore in
           quos iusto! Porro, impedit!
         </p>
-      </section>
-      <section class="card feature">
+      </article>
+      <article class="card feature">
         <img
           src="./assets/blockchain-contracts-01.svg"
           alt="Blockchain contracts icon - two women having a mutual agreement with the help of blockchain"
-          class="card-icon"
+          class="card__icon"
         />
         <h2>Secure contracts through blockchain</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ullam
           ipsa commodi laboriosam facere aspernatur!
         </p>
+      </article>
+      <section class="testimonials">
+        <h1 class="testimonials__header">What our clients say about us</h1>
+        <article class="testimonials__card testimonial1">
+          <p>
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+            earum. Aliquid officia vel debitis, doloremque neque optio, rem
+            corporis, recusandae eos quas error alias dolorum ipsum. Veritatis
+            consectetur non praesentium!"
+          </p>
+          <figure>
+            <img
+              src="./assets/testimonials/john_michael.jpg"
+              alt="Client profile picture"
+              class="testimonials__photo"
+            />
+            <figcaption>John Michael</figcaption>
+          </figure>
+        </article>
+        <article class="testimonials__card testimonial2">
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit rerum
+            excepturi eos minima cumque alias ullam dolor nihil sed suscipit
+            voluptatem, at nemo adipisci aut dolorem, asperiores architecto
+            eveniet. Minima minus aspernatur temporibus sequi quos. Nostrum?"
+          </p>
+          <figure>
+            <img
+              src="./assets/testimonials/robert_carrey.jpg"
+              alt="Client profile picture"
+              class="testimonials__photo"
+            />
+            <figcaption>Robert Carrey</figcaption>
+          </figure>
+        </article>
+        <article class="testimonials__card testimonial3">
+          <p>
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+            ullam fugit, adipisci maiores illo numquam. Consequuntur sapiente
+            fugit illo autem ratione assumenda voluptas voluptatum quo
+            perspiciatis at."
+          </p>
+          <figure>
+            <img
+              src="./assets/testimonials/elisabeth_polanski.jpg"
+              alt="Client profile picture"
+              class="testimonials__photo"
+            />
+            <figcaption>Elizabeth Polanski</figcaption>
+          </figure>
+        </article>
       </section>
     </main>
     <footer class="footer">
       <section class="company">
-        <ul class="menu-list">
-          <li><a href="#" class="menu-list-item-link">About</a></li>
-          <li><a href="#" class="menu-list-item-link">Careers</a></li>
-          <li><a href="#" class="menu-list-item-link">Blog</a></li>
-          <li><a href="#" class="menu-list-item-link">Contact</a></li>
+        <ul class="menu__list">
+          <li><a href="#" class="menu__list__item__link">About</a></li>
+          <li><a href="#" class="menu__list__item__link">Careers</a></li>
+          <li><a href="#" class="menu__list__item__link">Blog</a></li>
+          <li><a href="#" class="menu__list__item__link">Contact</a></li>
         </ul>
       </section>
-      <section class="social-media">
+      <section class="social__media">
         <ul>
           <li>
-            <a href="#"
-              ><img
-                src="./assets/facebook-f.svg"
-                alt="Facebook"
-                class="social-media-icon"
-            /></a>
+            <a
+              href="#"
+              class="social__media__link"
+              style="background-image:url(./assets/facebook-f.svg)"
+            ></a>
           </li>
           <li>
-            <a href="#"
-              ><img
-                src="./assets/linkedin.svg"
-                alt="LinkedIn"
-                class="social-media-icon"
-            /></a>
+            <a
+              href="#"
+              class="social__media__link"
+              style="background-image: url(./assets/linkedin.svg);"
+            ></a>
           </li>
           <li>
-            <a href="#"
-              ><img
-                src="./assets/instagram.svg"
-                alt="Instagram"
-                class="social-media-icon"
-            /></a>
+            <a
+              href="#"
+              class="social__media__link"
+              style="background-image: url(./assets/instagram.svg);"
+            ></a>
           </li>
           <li>
-            <a href="#"
-              ><img
-                src="./assets/twitter.svg"
-                alt="Twitter"
-                class="social-media-icon"
-            /></a>
+            <a
+              href="#"
+              class="social__media__link"
+              style="background-image: url(./assets/twitter.svg);"
+            ></a>
           </li>
         </ul>
       </section>
       <p class="copyright">&copy; nexthome 2019</p>
       <ul class="legal">
-        <li><a href="#">Terms of use</a></li>
-        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#" class="legal__link">Terms of use</a></li>
+        <li><a href="#" class="legal__link">Privacy policy</a></li>
       </ul>
     </footer>
     <script src="app.js"></script>
